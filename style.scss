@@ -76,9 +76,9 @@ p {
 a {
     color: $link-color;
     transition: all 0.2s ease;
-
     &:hover {
         color: darken($link-color, 20%);
+        text-decoration: none;
     }
 }
 
@@ -201,3 +201,4 @@ b,
 .bold {
     font-weight: $font-weight-bold;
 }
+

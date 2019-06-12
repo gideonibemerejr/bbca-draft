@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  min-height: 100%;
   line-height: 1;
 }
 
@@ -116,6 +117,7 @@ a {
 }
 a:hover {
   color: #7c6f6f;
+  text-decoration: none;
 }
 
 ul,
