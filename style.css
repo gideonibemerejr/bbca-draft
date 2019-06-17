@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Proza+Libre&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,8 +54,9 @@ table {
     # Type
 \*------------------------------------*/
 *, html, body {
+  background-color: #fafafa;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
-  font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -62,8 +64,9 @@ table {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Proza Libre", sans-serif;
   margin-top: 36px;
-  color: #000000;
+  color: #3C393C;
   line-height: 1.25em;
   font-weight: 700;
 }
@@ -72,32 +75,32 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 1.9230769231rem;
+  font-size: 1.5384615385rem;
   margin-bottom: 18.4615384615px;
 }
 
 h3 {
-  font-size: 1.6666666667rem;
+  font-size: 1.3333333333rem;
   margin-bottom: 16px;
 }
 
 h4 {
-  font-size: 1.4705882353rem;
+  font-size: 1.1764705882rem;
   margin-bottom: 14.1176470588px;
 }
 
 h5 {
-  font-size: 1.3888888889rem;
+  font-size: 1.1111111111rem;
   margin-bottom: 13.3333333333px;
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 12px;
 }
 
@@ -113,9 +116,9 @@ p:last-of-type {
 
 a {
   color: #ADA4A4;
-  transition: all 0.2s ease;
 }
 a:hover {
+  transition: all 0.2s ease;
   color: #7c6f6f;
   text-decoration: none;
 }
@@ -215,7 +218,289 @@ b,
   font-weight: 900;
 }
 
+/*------------------------------------*\
+    # Navigation
+\*------------------------------------*/
+nav {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
 
+.imagebreak, nav {
+  width: 100%;
+  max-width: none;
+}
 
+.nav-container {
+  display: flex;
+  width: 1470px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-columns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.nav-column--logo {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.text-p2 {
+  margin-top: -12px;
+  margin-bottom: -12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-column--links {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.nav-link {
+  margin-top: -6px;
+  margin-bottom: -6px;
+  margin-left: 32px;
+  padding: 0;
+}
+
+.footer-link, .nav-link, .text-p3 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.nav-container, .section-container, .section-container--hero {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+/*------------------------------------*\
+    # Hero
+\*------------------------------------*/
+.section-hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.section-container--hero {
+  display: flex;
+  max-width: 1470px;
+  margin-top: 208px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-layout {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.grid-container--content, .grid-container--footer, .grid-container--hero {
+  grid-template-rows: auto;
+}
+
+.grid-container--hero {
+  justify-content: center;
+  justify-items: start;
+  align-items: center;
+  align-content: center;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-block--hero {
+  margin-right: 80px;
+}
+
+.grid-span {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.text-h1, .text-h2 {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.text-h1 {
+  margin-top: -18px;
+  margin-bottom: -18px;
+  font-size: 47px;
+  line-height: 72px;
+}
+
+.hero-arrow--section {
+  position: relative;
+  left: 0;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  display: flex;
+  width: 1470px;
+  max-width: 1470px;
+  margin-right: 64px;
+  margin-bottom: 88px;
+  margin-left: 64px;
+}
+
+.hero-arrow--link-block {
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  max-width: 100%;
+  display: inline-block;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*------------------------------------*\
+    # Responsive Styles
+\*------------------------------------*/
+@media (max-width: 991px) {
+  .nav-container, .footer-container {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+
+  .section-hero {
+    position: static;
+    height: auto;
+    padding-top: 248px;
+    padding-bottom: 216px;
+    align-items: center;
+  }
+
+  .section-container--hero {
+    margin-top: 0;
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+
+  .grid-container--hero {
+    grid-template-columns: 1fr 0.25fr;
+  }
+
+  .grid-block--hero {
+    margin-right: 0;
+  }
+
+  .hero-arrow--section {
+    display: none;
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-container {
+    height: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .nav-columns {
+    flex-direction: column;
+  }
+
+  .nav-column--logo {
+    margin-bottom: 20px;
+  }
+
+  .text-p2 {
+    font-size: 19px;
+    line-height: 36px;
+  }
+
+  .nav-column--links {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .nav-link {
+    margin-right: 32px;
+    margin-left: 0;
+  }
+
+  .section-hero {
+    padding-top: 164px;
+    padding-bottom: 140px;
+  }
+
+  .section-container--hero {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .grid-container--hero {
+    grid-template-columns: 1fr;
+  }
+
+  .text-h1 {
+    font-size: 37px;
+    line-height: 56px;
+  }
+
+  .hero-arrow--section {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 479px) {
+  .nav-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .nav-container, .section-container {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+
+  .nav-column--links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+.text-accent {
+  color: #ADA4A4;
+}
 
 /*# sourceMappingURL=style.css.map */

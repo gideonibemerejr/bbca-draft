@@ -4,20 +4,23 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <script src="https://kit.fontawesome.com/632585e591.js"></script>
         <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+
         <title>Document</title>
     </head>
 
     <body>
         <!-- NAVIGATION Section START-->
-        <nav class='flex'>
-            <div class="nav-container flex">
+        <nav>
+            <div class="nav-container ">
                 <div class="nav-columns row">
-                    <div class="nav-column--logo">
-                        <h1>Black Buddha Creative Agency</h1>
+                    <div class="col-xs-12 nav-column--logo">
+                        <h1 class="text-p2">BB<span class="text-accent">CA</span>
+                        </h1>
                     </div>
-                    <div class="nav-column--links">
+                    <div class="col-xs-12 nav-column--links">
                         <a class="active nav-link" href="#About">About</a>
                         <a class="nav-link" href="#">Events</a>
                         <a class="nav-link" href="#Contact">Contact</a>
@@ -28,22 +31,34 @@
         <!-- NAVIGATION Section END-->
 
         <!-- HERO Section START-->
-        <section class="hero flex">
-            <div class="container--hero flex">
+        <section class="section-hero">
+            <div class="section-container--hero ">
                 <div class="grid-layout grid-container--hero">
-                    <div class="grid-block--hero">
-                        <h1>We foster creative exchange through engagement, education, and investment in the arts</h1>
+                    <div class="grid-block--hero grid-span">
+                        <h1 class="text-h1">An agency fostering engagement, education and investment in creative arts</h1>
                     </div>
                 </div>
             </div>
-            {# <div class="hero-arrow--section">
-                                                                                                                                                                            <a class="hero-arrow--link-block" href="#About">
-                                                                                                                                                                                arrow
-                                                                                                                                                                            </a>
-                                                                                                                                                                        </div> #}
-            {# <div class="hero-image--wrapper">
-                                                                                                                                                                            <div class="hero-image--container"></div>
-                                                                                                                                                                        </div> #}
+            <div class="hero-arrow--section">
+                <a class="hero-arrow--link-block" href="#About">
+                    <svg data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #ada4a4;
+                                }
+                            </style>
+                        </defs>
+                        <title>downarrow</title>
+                        <g id="surface1">
+                            <path class="cls-1" d="M12.89,0h0a1.07,1.07,0,0,0-1,1V60.2l-10-12.1a1.14,1.14,0,0,0-.8-.3,1.1,1.1,0,0,0-1,.6.83.83,0,0,0,.3,1.1l11.8,13.9.8.6.8-.7,11.8-13.9a1,1,0,0,0,.4-1,.85.85,0,0,0-.8-.7,1.43,1.43,0,0,0-1.1.3l-10,12.2V1a1.14,1.14,0,0,0-.3-.8A2.92,2.92,0,0,0,12.89,0Z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <!--<div class="hero-image--wrapper">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="hero-image--container"></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div> -->
         </section>
         <section class="mobile-hero--image">
             <img alt="image" class="image-break" sizes="100vw" src="">
