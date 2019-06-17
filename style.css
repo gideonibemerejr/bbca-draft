@@ -413,7 +413,13 @@ img {
   margin-bottom: 88px;
   border-top: 88px solid #fafafa;
   border-bottom: 88px solid #fafafa;
+  background: no-repeat;
+  background-size: auto;
   background-image: url(./SVG/hero.jpg);
+}
+
+.mobile-hero--image {
+  display: none;
 }
 
 /*------------------------------------*\
@@ -451,6 +457,24 @@ img {
     display: none;
     margin-right: 48px;
     margin-left: 48px;
+  }
+
+  .hero-image--wrapper {
+    position: static;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    display: none;
+    width: 100vw;
+    height: 50%;
+  }
+
+  .mobile-hero--image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 @media (max-width: 767px) {
@@ -523,6 +547,15 @@ img {
   .nav-column--links {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .section-hero {
+    padding-bottom: 130px;
+  }
+
+  .section-container--hero {
+    margin-right: 32px;
+    margin-left: 32px;
   }
 }
 .text-accent {
