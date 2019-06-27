@@ -56,7 +56,9 @@ table {
 /*
 
 */
-*, html, body {
+*,
+html,
+body {
   background-color: #fafafa;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -66,20 +68,22 @@ table {
   -ms-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Proza Libre", sans-serif;
   margin-top: 36px;
   color: #3C393C;
   line-height: 1.25em;
   font-weight: 700;
 }
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
-  margin-top: 0;
-}
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 24px;
+  margin: 0.67em 0;
 }
 
 h2 {
@@ -161,7 +165,9 @@ hr {
   background-color: #24272B;
 }
 
-table, td, th {
+table,
+td,
+th {
   border: 1px solid #24272B;
   text-align: left;
 }
@@ -170,7 +176,8 @@ th {
   font-weight: 900;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
 }
 
@@ -233,7 +240,8 @@ nav {
   background-color: #fafafa;
 }
 
-.imagebreak, nav {
+.imagebreak,
+nav {
   width: 100%;
   max-width: none;
 }
@@ -265,6 +273,7 @@ nav {
 .text-p2 {
   margin-top: -12px;
   margin-bottom: -12px;
+  font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
 }
@@ -285,15 +294,67 @@ nav {
   padding: 0;
 }
 
-.footer-link, .nav-link, .text-p3 {
+.footer-link,
+.nav-link,
+.text-p3 {
   font-size: 17px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.nav-container, .section-container, .section-container--hero {
+.nav-container,
+.section-container,
+.section-container--hero {
   margin-left: 64px;
   margin-right: 64px;
+}
+
+/*------------------------------------*\
+    # Section 
+\*------------------------------------*/
+.section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  width: 1470px;
+  max-width: 1470px;
+  padding-top: 256px;
+  padding-bottom: 256px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.grid-container--content {
+  width: 100%;
+  justify-content: center;
+  justify-items: start;
+  align-items: start;
+  align-content: center;
+  grid-column-gap: 32px;
+  grid-row-gap: 0;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-block--title {
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.grid-block--content {
+  max-width: 640px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 2;
 }
 
 /*------------------------------------*\
@@ -325,7 +386,9 @@ nav {
   grid-column-gap: 16px;
 }
 
-.grid-container--content, .grid-container--footer, .grid-container--hero {
+.grid-container--content,
+.grid-container--footer,
+.grid-container--hero {
   grid-template-rows: auto;
 }
 
@@ -350,7 +413,12 @@ nav {
   grid-row-end: 2;
 }
 
-.text-h1, .text-h2 {
+.text-h1,
+.text-h2 {
+  margin-top: -16px;
+  margin-bottom: -16px;
+  font-size: 2rem;
+  line-height: 56px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -437,7 +505,8 @@ img {
     # Responsive Styles
 \*------------------------------------*/
 @media (max-width: 991px) {
-  .nav-container, .footer-container {
+  .nav-container,
+.footer-container {
     margin-right: 48px;
     margin-left: 48px;
   }
@@ -487,6 +556,34 @@ img {
     justify-content: flex-end;
     align-items: center;
   }
+
+  .section-container {
+    width: auto;
+    margin-left: 48px;
+    padding-top: 216px;
+    padding-bottom: 216px;
+  }
+
+  .section.image-breaker,
+.section-container {
+    margin-right: 48px;
+  }
+
+  .grid-container--content {
+    grid-auto-columns: 0.25fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .grid-block--content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 80px;
+  }
 }
 @media (max-width: 767px) {
   .nav-container {
@@ -506,7 +603,7 @@ img {
   }
 
   .text-p2 {
-    font-size: 19px;
+    font-size: 1.1rem;
     line-height: 36px;
   }
 
@@ -525,7 +622,8 @@ img {
     padding-bottom: 140px;
   }
 
-  .section-container--hero {
+  .section-container,
+.section-container--hero {
     margin-right: 40px;
     margin-left: 40px;
   }
@@ -543,6 +641,15 @@ img {
     margin-right: 40px;
     margin-left: 40px;
   }
+
+  .section-container {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .grid-block--content {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 479px) {
   .nav-container {
@@ -550,7 +657,8 @@ img {
     padding-bottom: 24px;
   }
 
-  .nav-container, .section-container {
+  .nav-container,
+.section-container {
     margin-right: 32px;
     margin-left: 32px;
   }
