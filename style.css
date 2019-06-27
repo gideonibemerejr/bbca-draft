@@ -372,7 +372,7 @@ nav {
   width: 1470px;
   max-width: 1470px;
   margin-right: 64px;
-  margin-bottom: 48px;
+  margin-bottom: 88px;
   margin-left: 64px;
 }
 
@@ -420,6 +420,17 @@ img {
 
 .mobile-hero--image {
   display: none;
+}
+
+/*------------------------------------*\
+    # About Section
+\*------------------------------------*/
+.section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /*------------------------------------*\
