@@ -388,6 +388,7 @@ nav {
   grid-row-end: 2;
 }
 .text-p2.service-white {
+  background-color: lighten($secondary, 40%);
   color: #fff;
 }
 .footer-container {
@@ -797,6 +798,7 @@ img {
   .nav-column--logo {
     margin-bottom: 20px;
   }
+
   .text-p2 {
     font-size: 1.1rem;
     line-height: 36px;
